@@ -1,0 +1,155 @@
+.dk-resturant{
+width: 400px;
+height: 50px;
+align-items: center;
+font-size: 1.5rem;
+font-weight: bold;
+margin: auto;
+}
+html{
+    background-color: rgb(255, 231, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 900; */
+}
+.nav-main{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+   text-align: center;
+   
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px ;
+    overflow-y: auto;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    
+     text-align: center;
+     gap: 20px;
+     
+}
+.btn{
+    font-size: 1rem;
+   /* margin: 10px; */
+   color: rgb(225, 52, 52);
+   font-weight: 700;
+   border: none;
+   background:none;
+   margin: 20px;
+   
+   
+}
+.btn:hover{
+    text-decoration: underline;
+}
+.btn:focus{
+    background-color: rgb(189, 237, 234);
+    border-radius: 2px;
+}
+
+/* Here Card Started */
+.card-main{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-container{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(220, 219, 219);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.card-container span{
+    display: block;
+}
+.id{
+    width: 20px;
+    height: 20px;
+    /* align-items: center; */
+    text-align: center;
+    color: rgb(223, 88, 88);
+    border-radius: 50%;
+    border: 1px solid black;
+    display: block;
+}
+img{
+    display: block;
+    margin: 10px;
+    border-radius: 5px;
+}
+.card-container button{
+ margin: 10px;
+ /* border: none; */
+ background: none;
+ border-radius: 8px;
+ /* background-color: rgb(227, 177, 177); */
+}
+.card-container button:hover{
+    text-decoration: underline;
+    color: red;
+}
+.card-container button:focus{
+    background-color: rgb(189, 237, 234);
+    border-radius: 2px;
+}
+.card-container img{
+    width: 100%;
+    height: 200px;
+}
+@media (width<=640px) {
+   
+    .card-container{
+        width: fit-content;
+        
+    }
+}
+@media (min-width:640px) and (  max-width:728px) {
+    .card-main{
+        /* width: 100%;
+        height: 100%; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        /* justify-content: space-between;
+        align-items: center; */
+    }
+    .card-container{
+        width: 300px;
+        height: 500px;
+        background-color: rgb(220, 219, 219);
+        border-radius: 8px;
+        /* margin-top: 20px;
+        padding: 20px; */
+        /* overflow-y: auto; */
+    }
+}
+@media (min-width:728px) and (  max-width:1280px) {
+    .card-main{
+        /* width: 100%;
+        height: 100%; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        /* justify-content: space-between;
+        align-items: center; */
+    }
+    .card-container{
+        width: 300px;
+        height: 500px;
+        background-color: rgb(220, 219, 219);
+        border-radius: 8px;
+        /* margin-top: 20px;
+        padding: 20px; */
+        /* overflow-y: auto; */
+    }
+}
